@@ -22,7 +22,7 @@ class Square extends Rectangle {
 		this._side=side;
 	}
 	getperimeter(){
-		return (4*this._side);
+		return (this._width*4);
 	}
 }
 const rectangle=new Rectangle(5,10);
