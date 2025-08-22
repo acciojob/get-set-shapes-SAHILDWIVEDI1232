@@ -4,6 +4,13 @@ class Rectangle {
 		this._width=width;
 		this._height=height;
 	}
+	get width() {
+		return this._width;
+	}
+
+	get height() {
+		return this._height;
+	}
 	getArea(){
 		return (this.width*this._height);
 	}
@@ -11,7 +18,8 @@ class Rectangle {
 
 class Square extends Rectangle {
 	constructor(side){
-		super(side);
+		super(side,side);
+		this._side=side;
 	}
 	getperimeter(){
 		return (4*this._side);
