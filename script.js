@@ -12,17 +12,17 @@ class Rectangle {
 		return this._height;
 	}
 	getArea(){
-		return (this.width*this._height);
+		return (this.width*this.height);
 	}
 }
 
 class Square extends Rectangle {
 	constructor(side){
 		super(side,side);
-		this._side=side;
-	}
-	getperimeter(){
-		return (this._width*4);
+		
+	
+	getPerimeter(){
+		return (this.width*4);
 	}
 }
 const rectangle=new Rectangle(5,10);
